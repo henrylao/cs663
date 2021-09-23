@@ -32,6 +32,7 @@ http://csweb01.csueastbay.edu/~ap7272/
 http://csweb01.csueastbay.edu/~ap7956/
 http://csweb01.csueastbay.edu/~aq2467/
 http://csweb01.csueastbay.edu/~aq2588/
+
 http://csweb01.csueastbay.edu/~as5696/
 http://csweb01.csueastbay.edu/~as5793/
 http://csweb01.csueastbay.edu/~at8272/
@@ -64,6 +65,7 @@ http://csweb01.csueastbay.edu/~bd5546/
 http://csweb01.csueastbay.edu/~be2859/
 http://csweb01.csueastbay.edu/~be5258/
 http://csweb01.csueastbay.edu/~be7585/
+
 http://csweb01.csueastbay.edu/~be8969/
 http://csweb01.csueastbay.edu/~be9248/
 http://csweb01.csueastbay.edu/~bf2566/
@@ -71,6 +73,7 @@ http://csweb01.csueastbay.edu/~bf3444/
 http://csweb01.csueastbay.edu/~bf4698/
 http://csweb01.csueastbay.edu/~bf8784/
 http://csweb01.csueastbay.edu/~bg3362/
+
 http://csweb01.csueastbay.edu/~bh2859/
 http://csweb01.csueastbay.edu/~bh4974/
 http://csweb01.csueastbay.edu/~bi2452/
@@ -79,6 +82,7 @@ http://csweb01.csueastbay.edu/~bj3637/
 http://csweb01.csueastbay.edu/~bj4522/
 http://csweb01.csueastbay.edu/~bj5297/
 http://csweb01.csueastbay.edu/~bj8365/
+
 http://csweb01.csueastbay.edu/~bj9884/
 http://csweb01.csueastbay.edu/~bm5995/
 http://csweb01.csueastbay.edu/~bm6575/
