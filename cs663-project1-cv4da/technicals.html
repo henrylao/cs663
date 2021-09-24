@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>CV4DA - Technicals</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+</head>
+
+<body class="is-preload">
+    <div id="page-wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="index.html">Computer Vision for Driver Assistance</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="technicals.html">Technicals</a>
+                        <ul>
+                            <li><a href="technicals.html">Introduction</a></li>
+                            <li><a href="sensors.html">Sensors</a></li>
+                            <li><a href="related-work.html">Related Work</a>
+                                <ul>
+                                    <li><a href="traffic-sign-recognition.html">Traffic Sign Recognition</a></li>
+                                    <li><a href="pedestrian-detection.html">Pedestrian Detection</a></li>
+                                    <li><a href="vehicle-detection.html">Vehicle Detection</a></li>
+                                    <li><a href="image-captioning.html">Image Captioning</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                            <!-- <li><a href="Dataset.html">Dataset</a></li> -->
+
+                            <li><a href="success.html">Successes and Failures</a></li>
+
+                            <!-- <li><a href="failure.html">Failures</a></li> -->
+                            <li><a href="challenges-and-future.html">Challenges and Future</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Resources</a>
+                        <ul>
+                            <li>
+                                <a href="docs/project_1_proposal.pdf">Project Proposal</a>
+
+                            </li>
+                            <li><a href="quiz.html">Quiz</a></li>
+
+                            <li><a href="references.html">References</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="elements.html">Elements</a></li> -->
+                    <!-- <li><a href="#" class="button primary">Sign Up</a></li> -->
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <h2>The Traffic Scene Understanding Problem</h2>
+                    <!-- <p>
+                        Recent methods for traffic scene understanding performing Traffic Sign Recognition (TSR), Pederstrian Detection, and Vehicle Detection, have some major shortcomings.
+                    </p> -->
+                </header>
+                <div class="row gtr-150">
+                    <div class="col-8 col-12-medium">
+                        <!-- Content -->
+                        <section id="content">
+                            <h3>Foreword</h3>
+                            <p>
+                                People are extremely adept at visually perceiving scenes and understanding scene structures. Recently, scene understanding has become on of the challenging and perhaps most important problem in computer vision.
+                            </p>
+                            <p>
+                                Images contain visual information; however, such information can contain various features such as shapes, edges, textures and colors.
+                            </p>
+
+                            <p>
+                                In scene understanding, the primary motivation driving object detection is to establish what objects are present and where they are located for extraction of information. Understanding of a scene requires integration of information at various levels for
+                                the extraction of semantic relationships and patterns from observations.
+                            </p>
+                        </section>
+                        <section id="content">
+                            <h3>
+                                What is scene understanding to Assistive Driver-Assistance Systems (ADAS)?
+                            </h3>
+                            <p>
+                                Scene understanding is the core technology -- it is the brain behind ADAS and is extremely important for smart or autonomous vehicles.
+                            </p>
+                        </section>
+
+                        <!-- Content -->
+                        <section id="content">
+                            <a href="#" class="image fit"><img src="images/home2.jpeg" alt="" /></a>
+                            <h3>Issue 1: Generalization</h3>
+                            <p>
+                                Most models have been customized for recognizing specific categories of traffic instead of general traffic targets. Issues range from traffic sign recognition to pedestrian detection. There has been a large focus on specific or multiple target detection
+                                without accounting for unseen targets. The pressing matter is the ADAS omition of new targets when generating suggestions putting the driver in danger.
+                            </p>
+                            <h3>Issue 2: Lack of Driver Assistance</h3>
+                            <p>
+                                Most recognition modules have been trained to perform the task of identifying objects. This does not address the primary issue -- provision of driver suggestions and scene description. Image captioning can serve as a solution to this problem providing
+                                useful descriptions of traffic situations and assist with ADAS when handling for edge cases in traffic.
+                            </p>
+                            <h3>Issue 3: Poor Integration of Recognition Modules</h3>
+                            <p>
+                                Naturally, one would think that more modules would provide an advantage -- an improvement to decisions for driving functions. This is not the case with numerous independent modules resulting with the issue with fusing Mutlimodal information to generate
+                                a decision for driving operations within a complicated traffic scene. The inability to fuse the various categories of information into a cohesive representation of a scene or overarching concept is an obstacle to overcome.
+                            </p>
+                        </section>
+                        <ul class="actions">
+                            <li><a href="sensors.html" class="button primary">Next Page</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-12-medium">
+                        <!-- Sidebar -->
+                        <hr/>
+
+                        <section id="sidebar">
+                            <section>
+                                <h3>Mutlimodal Information</h3>
+                                <a href="#" class="image fit"><img src="images/multimodal.png" alt="" /></a>
+                                <p>
+                                    Mutlimodal information refers to data that come from different modalities. In the case of recognition modules, we consider each module to be different forms of information to be related and integrated. People experience the world visually, audibly, through
+                                    touch, smell and taste. All of which define a perceptual modality in which signals are obtained to be processed.
+                                    <!-- In a nutshell, Mutlimodal means mutliple modes -- distinct "peaks" from various inputs. In the case of computer vision, how do we make sense of the following: -->
+                                </p>
+                                <!-- <ul>
+                                    <li>IR images</li>
+                                    <li>depth images</li>
+                                    <li>Lidar information</li>
+                                </ul> -->
+                                <footer>
+                                    <ul class="actions">
+                                        <li>
+                                            <a href="https://www.cs.cmu.edu/~morency/MMML-Tutorial-ACL2017.pdf" class="button">Learn More</a>
+                                        </li>
+                                    </ul>
+                                </footer>
+                            </section>
+                            <hr />
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <!-- <li>
+                    <a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a
+            >
+          </li> -->
+                <!-- <li>
+            <a href="#" class="icon brands alt fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li> -->
+                <li>
+                    <a href="https://www.linkedin.com/in/henry-lao/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a
+            >
+          </li>
+          <!-- <li>
+            <a href="#" class="icon brands alt fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li> -->
+          <li>
+            <a href="https://github.com/henrylao" class="icon brands alt fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+          <li>
+            <a href="mailto: hlao1995@gmail.com" class="icon solid alt fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; CV4DA. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
