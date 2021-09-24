@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
@@ -11,20 +11,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
 </head>
 
 <body class="is-preload">
     <div id="page-wrapper">
         <!-- Header -->
         <header id="header">
-            <h1 id="logo"><a href="index.html">Computer Vision for Driver Assistance</a></h1>
+            <h1 id="logo"><a href="index.html">   Computer Vision for Driver Assistance</a></h1>
             <nav id="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="technicals.html">Technicals</a>
                         <ul>
                             <li><a href="technicals.html">Introduction</a></li>
+                            <li><a href="sensors.html">Sensors</a></li>
                             <li><a href="related-work.html">Related Work</a>
                                 <ul>
                                     <li><a href="traffic-sign-recognition.html">Traffic Sign Recognition</a></li>
@@ -35,8 +37,9 @@
                             </li>
                             <li><a href="architecture.html">Architecture</a></li>
                             <!-- <li><a href="Dataset.html">Dataset</a></li> -->
-                            <li><a href="sensors.html">Sensors</a></li>
+
                             <li><a href="success.html">Successes and Failures</a></li>
+
                             <!-- <li><a href="failure.html">Failures</a></li> -->
                             <li><a href="challenges-and-future.html">Challenges and Future</a></li>
                         </ul>
@@ -44,7 +47,8 @@
                     <li><a href="#">Resources</a>
                         <ul>
                             <li>
-                                <a href="/docs/project_1_proposal.docx">Project Proposal</a>
+                                <a href="docs/project_1_proposal.pdf">Project Proposal</a>
+
                             </li>
                             <li><a href="quiz.html">Quiz</a></li>
 
@@ -62,7 +66,10 @@
             <div class="container">
                 <header class="major">
                     <h2>Architecture</h2>
-                    <p>Neural Image Captioning (NIC) following the <a href="#">Encoder-Decoder Framework [1]</a></p>
+                    <p>
+                        <a href="references.html#17">Neural Image Captioning (NIC) [17]  </a> following the
+                        <a href="references.html#16">Encoder-Decoder Framework [16] ,[18]  </a>
+                    </p>
                 </header>
 
                 <div class="row gtr-150">
@@ -70,55 +77,65 @@
 
                         <!-- Content -->
                         <section id="content">
-                            <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+                            <!-- <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a> -->
                             <h3>Overall Design</h3>
                             <a href="#" class="image fit"><img src="images/architecture-overall-design.png" alt="" /></a>
-
                         </section>
 
                         <!-- Content -->
                         <section id="content">
-
                             <h3>Early Visual Feature Extraction for Encoding</h3>
-                            <p>CNN VGG-16 was employed to carry out supervised learning of words associated with images. To avoid overfitting, transfer learning was applied such that VGG-16 was initialized to weights of a pre-trained model on <a href="https://arxiv.org/abs/1409.0575">ImageNet [1]</a>.
-                                VGG-16 is used as a feature extractor performing extractions in later convolutional layers in contrast to prior approaches extracting from the fully connected layer</p>
-                            <a href="#" class="image fit"><img src="images/architecture-early-feature-extraction.png" alt="" /></a>
-
+                            <p>
+                                CNN VGG-16 was employed to carry out supervised learning of words associated with images. To avoid overfitting, transfer learning was applied such that <a href="references.html#13">VGG-16 [13]</a>was initialized to weights
+                                of a pre-trained model on
+                                <a href="references.html#12">ImageNet [12] </a>. VGG-16 is used as a feature extractor performing extractions in later convolutional layers in contrast to prior approaches extracting from the fully connected layer
+                                <a href="references.html#17">[17] </a>.
+                            </p>
+                            <a href="#" class="image fit">
+                                <img src="images/architecture-early-feature-extraction.png" alt="" />
+                            </a>
                         </section>
                         <!-- Content -->
                         <section id="content">
-
                             <h3>Visual Feature Decoding</h3>
                             <p>
-                                The CNN was adapted to be fed into an RNN that learns to generate words. Note that RNN's carry out unsupervised learning during training.
+                                The CNN was adapted to be fed into a
+                                <a href="references.html#17">Recurrent Neural Network (RNN)</a> that learns to generate words. Note that RNN's carry out unsupervised learning during training.
                             </p>
-                            <a href="#" class="image fit"><img src="images/architecture-decoder2.png" alt="" /></a>
-
+                            <a href="#" class="image fit"><img src="images/architecture-decoder3.png" alt="" /></a>
                         </section>
-
                     </div>
-                    <div class="col-4 col-12-medium">
 
+                    <div class="col-4 col-12-medium">
                         <!-- Sidebar -->
                         <section id="sidebar">
                             <section>
                                 <h3>Long Short-Term Memory (LSTM) Cell</h3>
-                                <p>A core component in RNNs functioning as a unit capable of remembering values over time with regulation of input and output of information of the cell.</p>
+                                <p>
+                                    A <a href="references.html#15">core component in RNNs [15]</a> functioning as a unit capable of remembering values over time with regulation of input and output of information of the cell.
+                                </p>
                                 <a href="#" class="image fit"><img src="images/architecture-lstm-cell.png" alt="" /></a>
                                 <footer>
                                     <ul class="actions">
-                                        <li><a href="https://arxiv.org/pdf/1909.09586.pdf" class="button">Learn More</a></li>
+                                        <li>
+                                            <a href="https://arxiv.org/pdf/1909.09586.pdf" class="button">Learn More</a>
+                                        </li>
                                     </ul>
                                 </footer>
                             </section>
                             <hr />
+
                             <section>
                                 <h3>VGG-16 Network</h3>
-                                <p>A deep convolutional neural network for image recognition</p>
+                                <p>
+                                    A deep convolutional neural network for image recognition
+                                </p>
                                 <a href="#" class="image fit"><img src="images/vgg-16.png" alt="" /></a>
                                 <footer>
                                     <ul class="actions">
-                                        <li><a href="https://arxiv.org/abs/1409.1556" class="button">Learn More</a></li>
+                                        <li>
+                                            <a href="https://arxiv.org/abs/1409.1556" class="button">Learn More</a>
+                                        </li>
                                     </ul>
                                 </footer>
                             </section>
@@ -128,7 +145,6 @@
                 </div>
             </div>
         </div>
-
 
         <!-- Footer -->
         <footer id="footer">
@@ -152,12 +168,16 @@
             >
           </li> -->
           <li>
-            <a href="https://github.com/henrylao" class="icon brands alt fa-github"
+            <a
+              href="https://github.com/henrylao"
+              class="icon brands alt fa-github"
               ><span class="label">GitHub</span></a
             >
           </li>
           <li>
-            <a href="mailto: hlao1995@gmail.com" class="icon solid alt fa-envelope"
+            <a
+              href="mailto: hlao1995@gmail.com"
+              class="icon solid alt fa-envelope"
               ><span class="label">Email</span></a
             >
           </li>
@@ -178,6 +198,8 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+
+
 </body>
 
 </html>
