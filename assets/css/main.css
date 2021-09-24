@@ -755,10 +755,10 @@ body.landing.is-preload:after {
     }
     .responsive-iframe {
         /* position: absolute; */
-        top: 0;
+        /* top: 0;
         left: 0;
         bottom: 0;
-        right: 0;
+        right: 0; */
         max-width: 100%;
         width: 90%;
         /* height: 100%; */
@@ -770,8 +770,15 @@ body.landing.is-preload:after {
         width: 100% !important;
     }
     .responsive-iframe {
-        width: 100% !important;
-        height: 100%;
+        /* position: absolute; */
+        /* top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; */
+        /* max-width: 100%; */
+        width: 100%;
+        !important;
+        /* height: 100%; */
     }
 }
 
@@ -3820,6 +3827,16 @@ body.is-touch #banner {
     select,
     textarea {
         font-size: 12pt;
+    }
+    .responsive-iframe {
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        /* max-width: 100%; */
+        width: 90%;
+        height: 100%;
     }
     /* Button */
     input[type="submit"],
