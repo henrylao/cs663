@@ -79,29 +79,73 @@
                             <!-- <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a> -->
                             <h3>Overall Design</h3>
                             <a href="#" class="image fit"><img src="images/architecture-overall-design.png" alt="" /></a>
+                            <a href="#" class="image fit"><img src="images/rnn-vs-fnn.png" alt="" /></a>
+                            <p>
+                                Distinguishing between recurrent neural networks and feed-forward only networks. Feed-forward is a case where information only goes forward and never backward. We can think of information with a flow direction of bottom-up or top-down.
+                            </p>
+
                         </section>
 
                         <!-- Content -->
                         <section id="content">
-                            <h3>Early Visual Feature Extraction for Encoding</h3>
-                            <p>
-                                CNN VGG-16 was employed to carry out supervised learning of words associated with images. To avoid overfitting, transfer learning was applied such that <a href="references.html#13">VGG-16 [13]</a> was initialized to weights
-                                of a pre-trained model on
-                                <a href="references.html#12">ImageNet [12] </a>. VGG-16 is used as a feature extractor performing extractions in later convolutional layers in contrast to prior approaches extracting from the fully connected layer
-                                <a href="references.html#17">[17] </a>.
+                            <h3>Preprocessing: Word Embedding</h3>
+                            <p>Words are converted into tokens -- hot encoded such that a computer can make sense of them. For each image, we have a sentence and we also have a glossary -- definition of the set of all words that exist in the dataset.
                             </p>
                             <a href="#" class="image fit">
-                                <img src="images/architecture-early-feature-extraction.png" alt="" />
+                                <img src="images/word-embedding.png" alt="" />
                             </a>
-                        </section>
-                        <!-- Content -->
-                        <section id="content">
-                            <h3>Visual Feature Decoding</h3>
-                            <p>
-                                The CNN was adapted to be fed into a Recurrent Neural Network (RNN) <a href="references.html#17">[17]</a> that learns to generate words. Note that RNN's carry out unsupervised learning during training.
-                            </p>
-                            <a href="#" class="image fit"><img src="images/architecture-decoder3.png" alt="" /></a>
-                        </section>
+                            <!-- Content -->
+                            <section id="content">
+                                <h3>Early Visual Feature Extraction for Encoding</h3>
+                                <p>
+                                    CNN VGG-16 was employed to carry out supervised learning of words associated with images. To avoid overfitting, transfer learning was applied such that <a href="references.html#13">VGG-16 [13]</a> was initialized to
+                                    weights of a pre-trained model on
+                                    <a href="references.html#12">ImageNet [12] </a>. VGG-16 is used as a feature extractor performing extractions in later convolutional layers in contrast to prior approaches extracting from the fully connected layer
+                                    <a href="references.html#17">[17] </a>.
+                                </p>
+
+
+                                <a href="#" class="image fit">
+                                    <img src="images/architecture-early-feature-extraction.png" alt="" />
+                                </a>
+
+                                <ul>
+                                    <li>
+                                        Accept an image and embed it
+                                    </li>
+                                    <li>
+
+                                        Condition the RNN on the embedding
+                                    </li>
+                                    <li>
+                                        Predict the next token given a START token
+                                    </li>
+                                    <li>
+                                        Employ the predicted token as an input at the next time step
+                                    </li>
+
+                                    <li>
+                                        Iterate until an END token has been outputted
+                                    </li>
+                                </ul>
+
+                            </section>
+                            <!-- Content -->
+                            <section id="content">
+                                <h3>Visual Feature Decoding</h3>
+                                <a href="#" class="image fit"><img src="images/lstm_cell.png" alt="" /></a>
+                                <p>
+                                    For every step in the sequence, we apply the same LSTM thus the goal of the cell when optimized is to find the right set of weights so that we can acccomodate our glossary of words. Thus; for every word in a sentence associated with an image, there is
+                                    a probability distribution over the set of all possible words.
+                                </p>
+                                <p>
+                                    The CNN was adapted to be fed into a Recurrent Neural Network (RNN) <a href="references.html#17">[17]</a> that learns to generate words. Note that RNN's carry out unsupervised learning during training.
+                                </p>
+                                <a href="#" class="image fit"><img src="images/architecture-decoder3.png" alt="" /></a>
+                                <p>
+                                    The collection of LSTM cells is important because it stores the state of a particular word. Each of the vertical LSTM modules attempt to forecast the word. At the very end, we apply a bottleneck layer -- a dense layer to reduce the parameters after which
+                                </p>
+                            </section>
                     </div>
 
                     <div class="col-4 col-12-medium">
