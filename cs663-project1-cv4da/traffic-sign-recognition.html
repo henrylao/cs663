@@ -173,9 +173,17 @@
                                     <li>traffic sign detection</li>
                                     <li>traffic sign classification</li>
                                 </ul>
-                                Patches of interest are first extracted via detection (segmentation), followed by identification during classification. Here is one approach that has been taken
-                                <a href="references.html#8">[8] </a>
+                                Patches of interest are first extracted via detection (segmentation), followed by identification during classification. Here is one approach that has been taken <a href="references.html#8">[8] </a>
+                                <ul>
+                                    <li>Acquiring an image is simply ingesting an input from a sensor and in the case of the proposed driver assistant application it is a matter of capturing live images from an Android camera</li>
+                                    <li>Preprocessing is done to setup the input to the requirements of the model</li>
+                                    <li>Afterwards, segments based upon their <b>H</b>ue, <b>S</b>aturation and <b>V</b>alue (lightness) creating different regions that exist within the image based on the HSV color model</li>
+                                    <li>The morphology of the image is segment is then found thus clearly defining areas -- shapes of interest followed by filtering to fine tune the <b>R</b>egion <b>o</b>f <b>I</b>nterest to be cropped</li>
+                                    <li>Finally, after all this preprocessing the cropped image is fed into a CNN for classification</li>
+                                </ul>
+                                
                             </p>
+                            <a href="#" class="image" ><img src="images/hsv.png" width=75% height=75% alt="" /></a>
                             <a href="#" class="image fit"><img src="images/tsr-segmentation.png" alt="" /></a>
                             <a href="#" class="image fit"><img src="images/tsr-cnn.png" alt="" /></a>
                         </section>

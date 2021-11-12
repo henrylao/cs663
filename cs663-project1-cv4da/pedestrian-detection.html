@@ -228,9 +228,25 @@
                                 </ul>
                             </p>
                             <p>
-                                Progress in deep learning has led to the employment of more modern algorithms such as Regional Convolutional Neural Networks (R-CNN) 
+                                Progress in deep learning has led to the employment of more modern algorithms such as <b>R</b>egional <b>C</b>onvolutional <b>N</b>eural <b>N</b>etworks <b>(R-CNN) </b>
                                 <a href="references.html#11">[4], [11], [15] </a> and Faster R-CNN <a href="references.html#10">[10] </a>
+                                R-CNNs are quite popular in the object detection area of researchand has been utilized to do a variety of tasks such as pose estimation, vehicle detectin, surveillance, etc. 
                             </p>
+                            <p>
+                                <b>R-CNN</b> are part of a <a href="https://www.mathworks.com/help/vision/ug/getting-started-with-r-cnn-fast-r-cnn-and-faster-r-cnn.html">family of object finding and classifying algorithms</a> -- the <b>first variation</b> of an algorithm that utilizes a 2 stage process to perform detection. 
+                                <ul>
+                                    <li>
+                                     First, it identifies a patches -- a subset of regions within an image that may contain an image through a voting process known as <b>Edge Boxes</b>
+                                    </li>
+                                    <li>
+                                    Afterwards, it performs the necessary <b>cropping and resizing</b> to prepare the region of interest for classification. 
+                                    </li>
+                                    <li>
+                                        The cropped image is fed into a CNN where classification is performed followed with a <b>final region proposal</b> of the <b>bounding boxes</b> aided by a <b>Support Vector Machine</b> that has been trained using the CNN features.
+                                    </li>
+                                </ul>
+                            </p>
+
                             <a href="#" class="image fit"><img src="images/rcnn.png" alt="" /></a>
 
                             <a href="#" class="image fit"><img src="images/faster-rcnn.png" alt="" />Faster-RCNN</a>
@@ -238,8 +254,21 @@
                             <a href="#" class="image fit"><img src="images/rcnn-results.png" alt="" /></a>
 
                             <p>
-                                A comparison of the two architectures along with others demonstrates the speed of Faster R-CNN to its predecessors suggesting it can be used for real-time object detection. Considering pedestrian detection, speed of a model along with accuracy is of utmost
-                                importance when accounting for safety.
+                                A comparison of the two architectures along with others 
+                                demonstrates the speed of <b>Faster R-CNN</b> (an iteration 3 on R-CNN)to its 
+                                predecessors suggesting it can be used for real-time 
+                                object detection. What Faster R-CNN does differently is 2 things<ul>
+                                    <li>
+                                        utilization of a <b>R</b>egion <b>P</b>roposal <b>N</b>etwork (RPN) for direct generation of regions of proposals within the network instead of using an external algorithm like <b>Edge Boxes</b> in R-CNN (variation 1)
+                                    </li>
+                                    <li>
+                                    usage of <a href="https://www.mathworks.com/help/vision/ug/anchor-boxes-for-object-detection.html">Anchor Boxes</a>
+                            <a href="#" class="image fit"><img src="https://www.mathworks.com/help/vision/ug/anchorbox_whatis.png" alt="" /></a>
+
+                                    </li>
+                                </ul>
+                                 R-CNN is that it Considering pedestrian detection, speed of a model along with accuracy is of utmost
+                                importance when accounting for safety.</b>
                             </p>
                             <p>
                                 In the pursuit of speed, the You-Only-Look-Once (YOLO) architecture <a href="references.html#9">[9] </a> is worth mentioning as it is orders of magnitude faster than the prior object detection algorithms. Unfortunately,
