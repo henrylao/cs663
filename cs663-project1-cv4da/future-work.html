@@ -7,7 +7,7 @@
 <html>
 
 <head>
-    <title>No Sidebar - Landed by HTML5 UP</title>
+    <title>CV4DA - Future Work</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -72,6 +72,7 @@
                 <li>
                     <a href="#">Resources</a>
                     <ul>
+                        <!-- Project Resources-->
                         <li>
                             <a href="docs/project_1_proposal.pdf">Project Proposal</a>
                         </li>
@@ -79,13 +80,24 @@
                         <li>
                             <a href="#">Project Presentation</a>
                         </li>
-                        <li>
-                            <a href="#">Technical Terms</a>
-                        </li>
-                        <li><a href="quiz.html">Quiz</a></li>
 
                         <li><a href="references.html">References</a></li>
                         <li><a href="quiz.html">Quiz</a></li>
+
+                        <!-- Learning Resources-->
+
+                        <li>
+                            <!-- Add Interactables like Convolution Visualizer
+-->
+                            <a href="#">Interactable Learning</a>
+                            <ul>
+                                <li><a href="quiz.html">Quiz</a></li>
+                                <li><a href="quiz.html">Convolution Visualizer </a></li>
+                                <li>
+                                    <a href="#">Technical Terms</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <!-- <li><a href="elements.html">Elements</a></li> -->
@@ -98,40 +110,57 @@
         <div id="main" class="wrapper style1">
             <div class="container">
                 <header class="major">
-                    <h2>No Sidebar</h2>
-                    <p>
-                        Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan
-                    </p>
+                    <h2>Future Work</h2>
                 </header>
 
                 <!-- Content -->
                 <section id="content">
-                    <!-- <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a> -->
-                    <h3>Dolore Amet Consequat</h3>
+                    <!-- <h3>More Involvement</h3>
                     <p>
-                        Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at magna consectetur non, malesuada quis augue. Morbi tincidunt
-                        pretium interdum est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam cubilia adipiscing interdum aliquet aliquet placerat cubilia accumsan cep ante nullam adipiscing
-                        tortor odio. Iaculis adipiscing accumsan nascetur in cras. Lacinia placerat.
-                    </p>
+                        This is one of the first attempts to apply image captioning to traffic scene understanding. Due to the lack of public data, manual annotations were carried out of necessity. Although quite detailed in describing the models employed, indication of annotation
+                        methods was sparse with only the provision of sample annotations. This would help to address the lack of open sourced data as well as 
+                        <a href="successes-and-challenges.html">Successes Section</a>
+                    </p> -->
+                    <h3>Handling for Cases of Occlusion</h3>
                     <p>
-                        Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc
-                        urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique faucibus magna adipiscing aliquet blandit nisi dolor accumsan nascetur lorem. Vis enim. Curae. Mi arcu vis aliquam ipsum non accumsan ac mi faucibus
-                        amet eu accumsan erat interdum semper accumsan. Eu sagittis tellus accumsan neque lorem penatibus in porttitor. Vivamus commodo curae. Condimentum lobortis praesent id ac lorem. Lorem vis ipsum dolor feugiat consequat dolore adipiscing.
+                        Although not explicitly specified, it is heavily implied that the proposed approach utilizes a regular camera for signal ingestion; however, typical camera's do not have the benefits of FIR Camera's to deal with reduced light environments. More work needs
+                        to be carried out to handle for multimodal data.
                     </p>
-                    <h3>Sed Magna Ornare</h3>
+
+                    <h3>Consideration of Variations of CNN-RNN</h3>
                     <p>
-                        In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus
-                        nisi rutrum metus. In accumsan lorem nunc ultrices a ac eu accumsan ac id nullam. Nec lobortis. Faucibus. Mi commodo laoreet arcu at non mi lacinia aliquet non lobortis phasellus accumsan nascetur varius. Integer orci porttitor
-                        eu faucibus aliquet faucibus ac accumsan adipiscing accumsan odio. Ut adipiscing.
+                        Smaller networks such as MobileNetV1 as well as EfficientNet can be considered for the CNN. For the RNN portion, Gated Recurrent Unit (GRU) layers can be explored as well as LSTMs with Attention; however, care should be taken when using LSTMs with Attention
+                        since they utilize a memory-hungry architecture known as a transformer.
                     </p>
-                    <ul>
-                        <li>Faucibus orci lobortis ac adipiscing integer.</li>
-                        <li>Col accumsan arcu mi aliquet placerat.</li>
-                        <li>Lobortis vestibulum ut magna tempor massa nascetur.</li>
-                        <li>Blandit massa non blandit tempor interdum.</li>
-                        <li>Lacinia mattis arcu nascetur lobortis.</li>
-                    </ul>
+
+                    <h3>Toward's a Gold-Standard for NLP Benchmarking</h3>
+                    <p>
+                        It is evident that there are disagreements with the existing NLP/MT benchmarking methods; thus, it is clear that there exists more work to be done when attempting to define a subsitute -- a proxy for human evaluation. For now, BLEU remains the supposed
+                        gold-standard when working in the NLP/MT space; however, there exist other forms of benchmarks. Future work should include such benchmarks to assess their validity in serving as a proxy of what can be universally accepeted as human
+                        evaluation.
+                    </p>
+
+                    <h3>Integration of Detected Lane Lines</h3>
+                    <p>
+                        The lines of the lane provide information particular to a given moment within the scene that may be valuable to making sense of a series of scenes. Of course, this is likely to be challenging when dealing with inner-city high-traffic situations where
+                        in which there are multiple objects within a scene ocluding the lane lines. Additional sensors can be considered, but would further exarcerbate the issue for in need of a sensor fusion solution. In addition, with more data comes
+                        the need for more processing thus creating a necessity for more powerful compact hardware. More work needs to be done here in evaluating the value of adding an additional feature such as lane lines to this system in terms of image
+                        captioning as well as what market is fit for such a tool.
+                    </p>
+
+                    <h3>Repurposing as a Driver's Perspectice Analysis Tool</h3>
+                    <p>
+                        Although initially proposed as a driving assistant, it is clear that the utility provided by such an assistant in reducing car accidents is limited. Further development and integration with vehicle would be necessary to integrate with control systems
+                        such as auto braking. Distracted driving is a major leading cause of accidents and with such a tool, it makes me wonder to what extent would such a proposed assistant actually provide utility and to what extent would it distract
+                        drivers in transit. The current system does not account for driver attention Further considerations from reflecting and research have lead me to believe
+                    </p>
                 </section>
+                <ul class="actions">
+                    <li>
+                        <a href="references.html" class="button primary">References</a>
+                    </li>
+                    <li><a href="quiz.html" class="button primary">Quiz</a></li>
+                </ul>
             </div>
         </div>
 

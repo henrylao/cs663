@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>CV4DA - Successes and Challenges</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+    <div id="page-wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="index.html">Computer Vision for Driver Assistance</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="technicals.html">Technicals</a>
+                        <ul>
+                            <li><a href="technicals.html">Introduction</a></li>
+                            <li><a href="sensors.html">Sensors</a></li>
+                            <li><a href="related-work.html">Related Work</a>
+                                <ul>
+                                    <li><a href="traffic-sign-recognition.html">Traffic Sign Recognition</a></li>
+                                    <li><a href="pedestrian-detection.html">Pedestrian Detection</a></li>
+                                    <li><a href="vehicle-detection.html">Vehicle Detection</a></li>
+                                    <li><a href="image-captioning.html">Image Captioning</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                            <!-- <li><a href="Dataset.html">Dataset</a></li> -->
+
+                            <li><a href="successes-and-challenges.html">Successes and Challenges</a>
+                                <ul>
+                                    <li>
+                                        <a href="">Successes</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Challenges</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="future-work.html">Future Work</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Resources</a>
+                        <ul>
+                            <!-- Project Resources-->
+                            <li>
+                                <a href="docs/project_1_proposal.pdf">Project Proposal</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Project Presentation</a>
+                            </li>
+
+                            <li><a href="references.html">References</a></li>
+                            <li><a href="quiz.html">Quiz</a></li>
+
+
+                            <!-- Learning Resources-->
+
+                            <li>
+                                <!-- Add Interactables like Convolution Visualizer
+-->
+                                <a href="#">Interactable Learning</a>
+                                <ul>
+                                    <li><a href="quiz.html">Quiz</a></li>
+                                    <!-- TODO: Add Interactables like Convolution Visualizer
+ | Fork, edit and integrate https://github.com/ezyang/convolution-visualizer -->
+                                    <li><a href="https://ezyang.github.io/convolution-visualizer/index.html">Convolution Visualizer
+</a></li>
+                                    <li><a href="#">Technical Terms</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <!-- <li><a href="elements.html">Elements</a></li> -->
+                    <!-- <li><a href="#" class="button primary">Sign Up</a></li> -->
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <h2>Successes and Challenges</h2>
+                    <!-- <p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p> -->
+                </header>
+
+                <!-- Content -->
+                <section id="content">
+                    <!-- <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a> -->
+                    <h2>Successes</h2>
+                    <h3>Data Preparation</h3>
+                    <p>The images of the LaRa Dataset <a href="references.html#14">[14]</a> were used in the development of an image captioning dataset for traffic scene understanding. 11,178 images were annotated with an English.
+                    </p>
+                    <a href="#" class="image fit"><img src="images/dataset-samples.png" alt="" />Annotated Samples</a>
+                </section>
+
+                <!-- Content -->
+                <section id="content">
+                    <!-- <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a> -->
+                    <h3>BLEU Benchmarking using Flickr30K</a>
+                    </h3>
+                    <p>
+                        <ul>
+                            <li>The Flickr30K Dataset <a href="#">[1]</a> was defined as the standard benchmark for image captioning in 2015.</li>
+                            <li>BLEU (BiLingual Evaluation Understudy) <a href="references.html#8">[7]</a> a metric for evaluating computer-translated text. It ranges from 0 to 1 and measures similarity of the computer-translated text to a set of reference
+                                translations.
+                            </li>
+                        </ul>
+
+
+                    </p>
+                    <a href="#" class="image fit"><img src="images/sucess-failure-Flickr30K.png" alt="" />Flickr30K Examples</a>
+                    <a href="#" class="image fit"><img src="images/sucess-failure-table.png" alt="" />Proposed model's BLEU scoring</a>
+
+                </section>
+
+                <!-- Content -->
+                <section id="content">
+                    <!-- <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a> -->
+                    <h3>Comparison of Existing and Proposed Solution</h3>
+                    <a href="#" class="image fit"><img src="images/sucess-failure-existing.png" alt="" />Existing</a>
+                    <a href="#" class="image fit"><img src="images/sucess-failure-proposed.png" alt="" />Proposed</a>
+                    <p>
+                        Observing the results from proposed model, we can see that the proposed models provides what appears to be a more clear description when assessing the scene in constrast to prior models.
+                    </p>
+                </section>
+
+                <!-- Content -->
+                <section id="content">
+                    <!-- <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a> -->
+                    <h3>Consolidation of Mutlimodal Information</h3>
+                    <p>The property multimodality in data creates redundancy in data which in turn protect against ambiguity. This is one of the many reasons why multimodality is important when developing models; however, there are challenges when dealing
+                        with multimodal information as indicated in the prior approaches using independent modules to be integrated for image captioning. Comparing the results of the existing and proposed solution, the proposed model's captions appear
+                        to be a mild improvement (more about this <a href="failure.html"> here</a>) since the descriptions appear to provide a clearer suggestion.
+                    </p>
+                </section>
+                <!-- Content -->
+
+                <hr>
+                <section id="content">
+                    <h2>Challenges</h2>
+                    <h3>Lack of Traffic Image Caption Data</h3>
+                    <p>
+                        This is one of the first attempts to apply image captioning to traffic scene understanding. Due to the lack of data, manual annotations were carried out of necessity.
+                    </p>
+
+                    <h3>Subjective Conclusions</h3>
+                    <p>
+                        Recalling from the results denoted in the <a href="successes-and-challenges.html">Successes Section</a> in "consolidating" the mutlimodal recognition modules. There is no explicit indication of a clear improvement (such as a larger
+                        BLEU score) BLEU score) when comparing the existing approach and the proposed approach. Qualification of the small sample demonstrate promising results using the proposed approach <a href="references.html#17"> [17]</a>; however,
+                        of evaluation of evaluation were not rigorous to evaluate how much different the proposed method was from the existing approach.
+                    </p>
+
+                    <h3>Ambiguity in Method of Annotation</h3>
+                    <p>
+                        Reproduceability is important when evaluating new approaches to solving problems. Transparency is of even greater importance when considering the lack direct community involvement in the niche space of image captioning for traffic scenes. This may create
+                        more challenges for those interested in the space stiffling community involvement (more about this on
+                        <a href="future-work.html">Future Work</a>). </p>
+
+                    <h3>Validity of BLEU Metric</h3>
+                    <p>
+                        Despite the BLEU score's popularity and wide usage in the Natural Language Processing (NLP) space, concerns have been raised about the validity of such a benchmark. For example, Matt Post raised concerns of the clarity of such a scoring metric pointing
+                        out some of the following issues:
+                    </p>
+                    <p>
+                        <ul>
+                            <li>
+                                different tokenization schemes
+                            </li>
+                            <li>
+                                lack of explicit specification of parametrized methods
+                            </li>
+                            <li>
+                                different normalization schemes
+                            </li>
+                            <li>
+                                the significance of preprocessing and its effects on scores
+                            </li>
+
+                        </ul>
+                        when using the BLEU score. he makes a case against <b>user-supplied reference tokenization</b> and proposes a <b>metric-supplied reference</b> (SACREBLEU)in its stead. A more in-depth discussion of this topic can be found <a href="https://www.statmt.org/wmt18/pdf/WMT019.pdf">here []</a>.
+
+                    </p>
+
+                    <h3>Further Investigations and Considerations of the BLEU Score through a Structured Review</h3>
+                    <p>
+                        Ehud Reiter carried out a structured review in 2018 exploring various papers focusing on evaluating <b>
+                          whether or not BLEU operates as a sufficent proxy for human evalation
+                        </b>. Correlation scores of <b>BLEU-human evaluations </b> were utilized as metrics of following the a similar classification of surrogate endpoints based on the<b>
+                          IQWiG
+                        </b>
+                        <li>high: 0.85+</li>
+                        <li>med: 0.70 - 0.85</li>
+                        <li>low: 0 - 0.70</li>
+                        <li>negative:
+                            < 0</li>
+                    </p>
+                    <p>
+                        Qualititative analyses were considered in evaluating BLEU weakness which found texts of rich language like Arabic, resulting in inappropriate penalties as a result of different adverbial placement.
+                    </p>
+
+                    <p>
+                        IQWiG considers proxy endpoints to be valid if reliable validation studies show either med or high correlation with clinical outcomes. One of his findings was that BLEU-human correlation were a poor indicator for <b>Natural Language Generation (NLG)
+
+                        </b> as well as text-level classification; however, they were observed to be within reason for system-level correlations.
+                    </p>
+                    <p>
+                        Furthermore, exploration of papers detailing BLEUs biases against certain technologies was carried out by Reiter. This raises quite a few concerns; however, such papers fell short in during Reiter's structured review due to the absence of disclosure of
+                        technologies with alleged biases.
+                    </p>
+
+
+                    <p>
+                        A notable point is the wide range of BLEU-human correlations reported even when controlling for similarity of tasks thus raising points of concern such as the correlation of bleu and human evaluations being very much so dependent on the details of the
+                        systems evaluated such as the the particular text of a corpus as well as the particular protocol used during human evaluations
+                    </p>
+
+
+                    <p>
+                        Ultimately, this raises concern of whether or not bleu validity of functioning as a proxy of human evaluation leading into the question of <b>
+                            what is a "gold-standard" 
+                            of human evaluation?
+                          </b>
+                    </p>
+
+                    <p>
+                        Reiter, closes out his review with conclusions that BLEU is decent method of evaluation that is <b>
+                          limited to the space of MT (machine translation) systems
+                        </b>. Justification for why BLEU is
+                        <b>
+                          NOT appropriate when evaluating other types of NLP systems
+                        </b> can be view as the following:
+
+                        <ul>
+                            <li>
+                                <b>
+                                  variance of correlations 
+                                </b>between BLEU and human evaluations
+                            </li>
+                            <li>
+                                human evaluations <b>
+                                  do not directly measure real-world outcomes
+                                </b>
+                            </li>
+                            <li>
+                                BLEU is <b>
+                                  technologically biased
+                                </b>
+                            </li>
+                        </ul>
+                        More info regarding this structured review and its results can be found <a href="https://direct.mit.edu/coli/article/44/3/393/1598/A-Structured-Review-of-the-Validity-of-BLEU"> here []</a>
+                    </p>
+                    <p>
+                        In closing, this raises many concerns such as the paper in which this project is extends from. More on future work can be found <a href="future-work.html">here []</a>.
+                    </p>
+                </section>
+                <ul class="actions">
+                    <li><a href="future-work.html" class="button primary">Next Page</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <!-- <li>
+                    <a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a
+            >
+          </li> -->
+                <!-- <li>
+            <a href="#" class="icon brands alt fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li> -->
+                <li>
+                    <a href="https://www.linkedin.com/in/henry-lao/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a
+            >
+          </li>
+          <!-- <li>
+            <a href="#" class="icon brands alt fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li> -->
+          <li>
+            <a href="https://github.com/henrylao" class="icon brands alt fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+          <li>
+            <a href="mailto: hlao1995@gmail.com" class="icon solid alt fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; CV4DA. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
